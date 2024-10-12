@@ -1,0 +1,432 @@
+@font-face {
+    font-family: font;
+    src: url(cherrybombone-regula.woff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('BG.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: font;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: 5px solid black;
+    box-shadow: 10px 50px 15px rgba(236, 236, 10, 1.5);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar-text {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-text h1 {
+    margin: 0;
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+.navbar-text p {
+    margin: 0 0 0 10px;
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-box {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    .navbar-text {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .navbar-text h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar-text p {
+        font-size: 0.9em;
+    }
+}
+
+.hero-section {
+    text-align: center;
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 300px auto;
+    font-size: 8rem;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 25px;
+    border-radius: 30px;
+    font-family: font;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+    border: 4px solid black;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 30px;
+    font-family: font;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border: 5px solid black;
+    box-shadow: 10px 50px 15px rgba(236, 236, 10, 1.5);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.container-image {
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.container-text {
+    flex: 1;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container-text p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 10px;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 10px 20px;
+        width: 80%;
+        max-width: 1200px;
+        margin: 300px auto;
+        font-size: 4rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-image {
+        width: 80%;
+        margin: 0 0 10px 0;
+    }
+
+    .container-text {
+        text-align: center;
+    }
+}
+
+.community-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-color: transparent;
+    margin-top: 300px;
+}
+
+.community-header {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+    font-size: 50px;
+}
+
+.community-header span {
+    margin-right: 10px;
+}
+
+.community-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.social-buttons {
+    display: flex;
+}
+
+.social-icon {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+}
+
+.ca-section {
+    background-color: rgb(248, 248, 92);
+    border-bottom: 5px solid black;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.ca-text {
+    margin: 0;
+    font-size: 20px;
+}
+
+.bottom-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-width-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-image {
+        width: 80%;
+        margin: 0 0 10px 0;
+    }
+
+    .container-text {
+        text-align: center;
+    }
+
+    .community-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .community-icon {
+        margin-bottom: 10px;
+    }
+
+    .ca-section {
+        padding: 5px;
+    }
+
+    .full-width-image {
+        height: 200px;
+    }
+
+    .community-header {
+        font-size: 25px;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+}
+
+.tokenomics-section {
+    text-align: center;
+    padding: 40px 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tokenomics-section h2 {
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+
+.tokenomics-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tokenomics-box {
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    flex: 1;
+    margin: 0 10px;
+    font-size: 2em;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .tokenomics-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tokenomics-box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .tokenomics-section {
+        height: 100vh;
+    }
+
+    .tokenomics-section h2 {
+        font-size: 5em;
+    }
+
+    .tokenomics-box {
+        font-size: 1.8em;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    margin: 60px;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 60px;
+}
+
+.social-button {
+    background-color: transparent;
+    color: lightblue;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: left;
+    font-family: font;
+}
+
+.buy-button {
+    background-color: yellow;
+    color: black;
+    font-size: 1.3rem;
+    font-family: font;
+    border: 4px solid black;
+    border-radius: 30px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .social-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
